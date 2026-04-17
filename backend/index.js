@@ -23,7 +23,7 @@ app.get("/",(req,res)=>{
     res.json({message:"server is running"})
 })
 app.use("/api/auth",authRoutes)
-app.use("/api/product",productRoutes)
+app.use("/api/product",ProductRoutes)
 
 const cartRoutes=require("./routes/cartRoute")
 app.use("/api/cart",cartRoutes)
